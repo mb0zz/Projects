@@ -1,0 +1,22 @@
+#Add a comment with a hashtag
+#To add a website, do (without the hashtag):
+#l:www.google.com/
+
+#to add header requests do
+#h:{'username': 'matt', 'password': 'mypass'}
+
+#to do a link with header requests:
+#l:www.gmail.com/ 
+#h:{'username': 'matt', 'password': 'mypass'}
+
+#to look for divs:
+#d:(divname)
+
+#div content:
+#dc:(div)
+
+#classes:
+#c:(classname)
+
+#to change to another url, just type l: again, all new arguments will apply to the new link
+
