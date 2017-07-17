@@ -9,47 +9,48 @@ def binary_search(list, number):
 	bottom = 0
 	top = len(list) - 1
 	
-	timer = time.process_time()
-	
+	start_time = time.time()
 	while not found and bottom <= top:
 		count += 1
 		index = (bottom + top)//2
-		
 		if list[index] == number:
 			found = True
-			return True
 			
 		elif list[index] < number:
 			bottom = index + 1
 			
 		else:
 			top = index - 1
-	print("Binary search took a total of ", count, " tries over a time of: ", (timer))
-	return False
+	end_time = time.time()
+	print("Found number")
+	print("Binary search took a total of ", count, " tries over a time of: ", (end_time - start_time))
+	return found
 	
 def regular_search(list, number):
 	
-	timer1 = time.process_time()
+	start_time = time.time()
 	count = 0
+	found = False
 	for i in list:
 		count += 1
 		if i == number:
+			found = True
 			break
-	
-	print("regular search took a total of ", count, " tries over a time of: ", timer1)
-	return True
+	end_time = time.time()
+	print("regular search took a total of ", count, " tries over a time of: ", (end_time - start_time))
+	return found
 	
 
 	
 def run():
 	b_list = []
-	list_size = 1000
-	highest = 2000
+	list_size = 100000
+	highest = 100000
 	lowest = 0
 
 
 	for i in range(0, list_size): #create list to search
-		b_list.append(random.randint(lowest, highest))
+		b_list.append(i)
 		
 	while True:#while input isn't empty
 		#assuming user is smart enough to put an integer in here
