@@ -7,8 +7,8 @@ old_images_dir = dir + "\\uncropped"
 new_images_dir = dir + "\\cropped"
 
 ################Change these#####################
-intended_width = 800
-picture_quality = 95
+intended_width = 200
+picture_quality = 80
 #################################################
 
 for image in os.listdir(old_images_dir):

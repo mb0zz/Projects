@@ -1,0 +1,17 @@
+Get pygame for windows.(Not Linux, Mac, or raspberry pi)
+
+
+read everything first, lest you mess anything up.
+Install python version 3.4.3 at:
+https://www.python.org/downloads/release/python-343/
+MAKE SURE YOU GET THE RIGHT VERSION.  To check if your version is right, go to:
+	"start"
+	Right click on "Computer"
+	Click on properties
+	Under "System" find "System type:"
+	If your system type is 64-bit operating system get the corresponding versions of python 3.4.3 and Pygame.
+
+open cmd and add python34 to your path with: setx path "%path%;C:\Python34;"
+install pygame:
+https://bitbucket.org/pygame/pygame/downloads
+When you install it, select Python34 from registry under "Select Python Installations"

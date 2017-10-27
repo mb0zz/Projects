@@ -247,30 +247,30 @@ file = "write.py"
 my_c = CodeChecker(os.getcwd() + "\\" + str(file))
 
 iterable_list = ["var", "int", "str", "bool", "float", "tuple", "list", "dictionary", "function", "class"]
+def run():
+	while True:
+		#file = input("What file would you like to run?")
+		#omit = list(input("Enter words you'd like to omit\n>"))
+		#file = "hello.py"
+		try_again = input("Hit enter to save and run your code.")
+		if len(try_again) <1:
+			my_c.copy_paste("write.py", "execute.py")
+		omit = ["import", "open"]
+		
+		if len(omit) < 1:
+			omit = None
+		#usr_file = (os.getcwd() + "\\" + str(file))
+		code = my_c.check_banned_words(omit)
+		
+		if code == True:
+			y = my_c.check_syntax()
+		else:
+			print(code)
+		my_c.set_requirements(["x", "y", "z", "lister", "tupler",], ["var", "var", "var", "list", "tuple"])
+		time.sleep(2)
 
-while True:
-	#file = input("What file would you like to run?")
-	#omit = list(input("Enter words you'd like to omit\n>"))
-	#file = "hello.py"
-	try_again = input("Hit enter to save and run your code.")
-	if len(try_again) <1:
-		my_c.copy_paste("write.py", "execute.py")
-	omit = ["import", "open"]
-	
-	if len(omit) < 1:
-		omit = None
-	#usr_file = (os.getcwd() + "\\" + str(file))
-	code = my_c.check_banned_words(omit)
-	
-	if code == True:
-		y = my_c.check_syntax()
-	else:
-		print(code)
-	my_c.set_requirements(["x", "y", "z", "lister", "tupler",], ["var", "var", "var", "list", "tuple"])
-	time.sleep(2)
-
-	
-	
+run()		
+		
 	
 	
 	

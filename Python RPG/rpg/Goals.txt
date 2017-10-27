@@ -1,0 +1,20 @@
+Stuff that's done:
+
+Map generation
+collision & collision detection
+Viewbox
+Movement
+
+Stuff to do:
+
+Special tiles:
+	Tiles that can be animated
+	Tiles that the user can interact with
+	Tiles like chests, doors, portals, etc.
+	
+Make the viewbox work for all maps
+Enemy sprites
+Pathfinding --  This one is gonna be big.
+Player health 
+Player attacking 
+Player leveling

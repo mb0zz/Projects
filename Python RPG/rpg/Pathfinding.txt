@@ -1,0 +1,12 @@
+Brainstorming how to do pathfinding...
+
+Get enemy sprite's rect and see what direction it needs to go.  
+
+After the direction is picked, launch an invisible sprite with the same hitbox in that direction.
+
+In the instance of a collision, navigate it like a maze, however, launch into two directions:
+	For the left direction, attempt to go to the right as often as possible
+	For the right direction, attempt to go to the right as often as possible
+	Once a suitable path is found, look for shortcuts.
+
+How to find shortcuts will be a different matter.
