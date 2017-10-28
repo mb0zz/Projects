@@ -1,3 +1,65 @@
-body p {
-	color:orange;
+
+h1
+{
+   color: red; 
+   font-size: 18px;
+   border-style: double;
+   text-align: center;
+}
+h2
+{color: blue
+}
+p {
+    color: green; 
+   font-family: Arial;
+}
+ul
+{
+font-family: Cursive;
+}
+
+ol
+{
+font-size: 28px;
+}
+table
+{
+border-style: solid;
+}
+tr
+{
+border-style: solid;
+background-color: purple;
+}
+.Gardening
+{
+background-color: orange;
+}
+mark.orange
+{ color:#ff6600;
+background: none;
+}
+mark.font
+{
+font-family: Arial;
+background: none;
+}
+.ins
+{
+text-align: center;
+margin-left: auto;
+margin right: auto;
+}
+table 
+ {
+border-style: solid;
+}
+td 
+{ 
+border-style: solid; 
+background-color: purple;
+}
+.singletablecell 
+{ 
+background-color: orange;
 }
